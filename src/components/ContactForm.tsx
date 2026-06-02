@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 
+// На коју адресу стижу упити са сајта
+const PRIMARY_EMAIL = "adv.andrijakostic@gmail.com";
+const CC_EMAIL = "aleksandarn.jovic@gmail.com";
+
 const OBLASTI = [
   "Прекршајно право",
   "Одштетно право",
@@ -10,52 +14,63 @@ const OBLASTI = [
   "Друго",
 ];
 
+type Status = "idle" | "sending" | "ok" | "error";
+
 export default function ContactForm() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const name = String(fd.get("name") || "");
-    const email = String(fd.get("email") || "");
-    const phone = String(fd.get("phone") || "");
-    const oblast = String(fd.get("oblast") || "");
-    const message = String(fd.get("message") || "");
+    if (status === "sending") return;
+    setStatus("sending");
+    setErrorMsg("");
 
-    const subject = `Упит са сајта — ${oblast || "Општи упит"}`;
-    const body = [
-      `Име и презиме: ${name}`,
-      `Електронска адреса: ${email}`,
-      phone ? `Телефон: ${phone}` : null,
-      `Област: ${oblast}`,
-      "",
-      "Порука:",
-      message,
-    ]
-      .filter(Boolean)
-      .join("\n");
+    const form = e.currentTarget;
+    const fd = new FormData(form);
 
-    const mailto = `mailto:adv.andrijakostic@gmail.com?cc=aleksandarn.jovic@gmail.com&subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+    // FormSubmit options
+    fd.append("_subject", `Упит са сајта — ${fd.get("oblast") || "Општи упит"}`);
+    fd.append("_template", "table");
+    fd.append("_captcha", "false");
+    fd.append("_cc", CC_EMAIL);
 
-    window.location.href = mailto;
-    setSent(true);
+    try {
+      const res = await fetch(
+        `https://formsubmit.co/ajax/${encodeURIComponent(PRIMARY_EMAIL)}`,
+        {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: fd,
+        }
+      );
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      if (data.success === "true" || data.success === true) {
+        setStatus("ok");
+        form.reset();
+      } else {
+        throw new Error(data.message || "Грешка при слању");
+      }
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : "Непозната грешка";
+      setStatus("error");
+      setErrorMsg(message);
+    }
   }
 
-  if (sent) {
+  if (status === "ok") {
     return (
       <div className="border border-gold-deep/60 bg-parchment p-10 text-center">
         <div className="text-[11px] uppercase tracking-display text-gold-deep mb-4">
-          Хвала
+          Хвала вам
         </div>
         <h3 className="font-serif text-3xl text-green leading-tight">
-          Отворили смо ваш email клијент.
+          Ваш упит је послат.
         </h3>
         <p className="mt-5 text-ink-soft leading-relaxed">
-          Порука је припремљена са свим подацима — само кликните{" "}
-          <strong>Send</strong> у вашем email програму. Уколико се ништа није
-          десило, позовите нас директно:
+          Одговарамо у року од једног радног дана. Уколико је предмет хитан,
+          позовите нас директно.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
@@ -72,7 +87,7 @@ export default function ContactForm() {
           </a>
         </div>
         <button
-          onClick={() => setSent(false)}
+          onClick={() => setStatus("idle")}
           className="mt-8 text-[10px] uppercase tracking-display text-ink-soft underline"
         >
           Пошаљи нови упит
@@ -83,6 +98,9 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} className="space-y-8">
+      {/* Anti-bot honeypot */}
+      <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+
       <div className="grid md:grid-cols-2 gap-6">
         <Field label="Име и презиме" name="name" required />
         <Field label="Електронска адреса" name="email" type="email" required />
@@ -111,14 +129,25 @@ export default function ContactForm() {
         required
         placeholder="Укратко опишите о чему се ради. Све информације третирамо као строго поверљиве."
       />
+
+      {status === "error" && (
+        <div className="border border-burgundy/40 bg-burgundy/5 p-4 text-sm text-burgundy">
+          Слање није успело: {errorMsg}. Молимо покушајте поново или нас позовите
+          директно на 066 / 8420 455.
+        </div>
+      )}
+
       <button
         type="submit"
-        className="inline-flex items-center gap-3 bg-green text-ivory px-10 py-4 text-[11px] uppercase tracking-display hover:bg-green-deep transition-colors"
+        disabled={status === "sending"}
+        className="inline-flex items-center gap-3 bg-green text-ivory px-10 py-4 text-[11px] uppercase tracking-display hover:bg-green-deep transition-colors disabled:opacity-60 disabled:cursor-wait"
       >
-        Пошаљи упит
-        <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-          <path d="M0 5h12m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.2" />
-        </svg>
+        {status === "sending" ? "Слање…" : "Пошаљи упит"}
+        {status !== "sending" && (
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+            <path d="M0 5h12m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.2" />
+          </svg>
+        )}
       </button>
       <p className="text-xs text-ink-soft/70 leading-relaxed">
         Слањем упита пристајете на обраду података у сврху одговора.
