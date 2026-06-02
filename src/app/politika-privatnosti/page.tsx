@@ -1,41 +1,32 @@
 import PageHero from "@/components/PageHero";
 
-export const metadata = { title: "Politika privatnosti" };
+export const metadata = { title: "Политика приватности" };
 
 export default function Privacy() {
   return (
     <>
       <PageHero
-        eyebrow="Pravna napomena"
-        title="Politika privatnosti"
-        intro="Advokatska kancelarija Kostić štiti privatnost svih korisnika sajta i poštuje važeće propise o zaštiti podataka o ličnosti."
+        eyebrow="Правна напомена"
+        title="Политика приватности"
+        intro="Адвокатска канцеларија Костић Јовић и партнери штити приватност свих корисника сајта и поштује важеће прописе о заштити података о личности."
       />
-      <article className="mx-auto max-w-3xl px-6 lg:px-10 py-20 prose prose-lg text-ink-soft leading-relaxed space-y-6">
+      <article className="mx-auto max-w-3xl px-6 lg:px-10 py-20 text-ink-soft leading-relaxed space-y-6">
         <p>
-          Ova politika privatnosti opisuje koje podatke prikupljamo putem
-          internet stranice <strong>kostic-advokati.rs</strong>, kako ih
-          koristimo i koja prava imate u vezi sa svojim podacima.
+          Ова политика приватности описује које податке прикупљамо путем интернет странице, како их користимо и која права имате у вези са својим подацима.
         </p>
-        <h2 className="font-serif text-2xl text-ink">Podaci koje prikupljamo</h2>
+        <h2 className="font-serif text-2xl text-green">Подаци које прикупљамо</h2>
         <p>
-          Prikupljamo samo podatke koje nam dobrovoljno dostavite preko
-          kontakt forme: ime, prezime, elektronsku adresu, broj telefona i
-          tekst poruke. Te podatke koristimo isključivo radi odgovora na vaš
-          upit.
+          Прикупљамо само податке које нам добровољно доставите преко контакт форме: име, презиме, електронску адресу, број телефона и текст поруке. Те податке користимо искључиво ради одговора на ваш упит.
         </p>
-        <h2 className="font-serif text-2xl text-ink">Čuvanje podataka</h2>
+        <h2 className="font-serif text-2xl text-green">Чување података</h2>
         <p>
-          Podatke čuvamo onoliko koliko je potrebno za odgovor i eventualno
-          uspostavljanje saradnje, a najduže pet godina od prve poruke. Nakon
-          tog roka podaci se brišu, osim ako postoji zakonska obaveza dužeg
-          čuvanja.
+          Податке чувамо онолико колико је потребно за одговор и евентуално успостављање сарадње. Након тог рока подаци се бришу, осим ако постоји законска обавеза дужег чувања.
         </p>
-        <h2 className="font-serif text-2xl text-ink">Vaša prava</h2>
+        <h2 className="font-serif text-2xl text-green">Ваша права</h2>
         <p>
-          Imate pravo da zatražite uvid, ispravku ili brisanje vaših
-          podataka. Za sva pitanja u vezi sa privatnošću pišite nam na{" "}
-          <a href="mailto:office@kostic-advokati.rs" className="underline">
-            office@kostic-advokati.rs
+          Имате право да затражите увид, исправку или брисање ваших података. За сва питања у вези са приватношћу пишите нам на{" "}
+          <a href="mailto:adv.andrijakostic@gmail.com" className="underline">
+            adv.andrijakostic@gmail.com
           </a>
           .
         </p>

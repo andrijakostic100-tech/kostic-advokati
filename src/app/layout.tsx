@@ -6,32 +6,36 @@ import Footer from "@/components/Footer";
 
 const serif = Cormorant_Garamond({
   variable: "--font-serif",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 const sans = Inter({
   variable: "--font-sans",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kostic-advokati.rs"),
+  metadataBase: new URL("https://kostic-jovic.rs"),
   title: {
-    default: "Advokatska kancelarija Kostić — Tradicija. Diskrecija. Rezultat.",
-    template: "%s · Advokatska kancelarija Kostić",
+    default: "Адвокатска канцеларија Костић Јовић и партнери — Ниш",
+    template: "%s · Костић Јовић и партнери",
   },
   description:
-    "Advokatska kancelarija Kostić — privredno pravo, arbitraža, M&A, nepokretnosti i nasleđe. Decenija iskustva u zastupanju klijenata u zemlji i inostranstvu.",
+    "Адвокатска канцеларија Костић Јовић и партнери — прекршајно, одштетно и кривично право, непокретности. Заступамо клијенте широм Србије.",
   openGraph: {
-    title: "Advokatska kancelarija Kostić",
+    title: "Костић Јовић и партнери",
     description:
-      "Tradicija, diskrecija i merljivi rezultat. Pravno savetovanje za zahtevne klijente.",
+      "Адвокатска канцеларија из Ниша — прекршајно, одштетно, кривично право и непокретности.",
     type: "website",
     locale: "sr_RS",
+    images: ["/logo-color.png"],
+  },
+  icons: {
+    icon: "/symbol-color.png",
   },
 };
 

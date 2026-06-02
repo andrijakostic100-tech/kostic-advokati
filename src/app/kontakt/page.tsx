@@ -2,74 +2,76 @@ import PageHero from "@/components/PageHero";
 import Eyebrow from "@/components/Eyebrow";
 
 export const metadata = {
-  title: "Kontakt",
+  title: "Контакт",
   description:
-    "Zakažite konsultaciju u Advokatskoj kancelariji Kostić. Knez Mihailova 24, Beograd.",
+    "Адвокатска канцеларија Костић Јовић и партнери — Обреновићева 46, ТЦ Калча, ламела Д, локал 109, Ниш.",
 };
 
 export default function Kontakt() {
   return (
     <>
       <PageHero
-        eyebrow="Kontakt"
-        title="Pišite nam. Saslušaćemo."
-        intro="Svaki novi predmet počinje pažljivim razgovorom. Ostavite poruku ili nam pišite direktno — odgovaramo u roku od jednog radnog dana."
+        eyebrow="Контакт"
+        title="Пишите нам. Саслушаћемо."
+        intro="Свака сарадња почиње пажљивим разговором. Позовите нас, пошаљите поруку или дођите у канцеларију у Нишу — одговарамо у року од једног радног дана."
       />
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32 grid lg:grid-cols-12 gap-16">
         {/* Form */}
         <div className="lg:col-span-7">
-          <Eyebrow>Poverljivi upit</Eyebrow>
-          <h2 className="font-serif text-3xl lg:text-4xl mt-6 mb-12 text-ink">
-            Recite nam o čemu se radi.
+          <Eyebrow>Поверљиви упит</Eyebrow>
+          <h2 className="font-serif text-3xl lg:text-4xl mt-6 mb-12 text-green">
+            Реците нам о чему се ради.
           </h2>
-          <form className="space-y-8">
+          <form
+            action="mailto:adv.andrijakostic@gmail.com"
+            method="post"
+            encType="text/plain"
+            className="space-y-8"
+          >
             <div className="grid md:grid-cols-2 gap-6">
-              <Field label="Ime i prezime" name="name" required />
-              <Field label="Elektronska adresa" name="email" type="email" required />
+              <Field label="Име и презиме" name="name" required />
+              <Field label="Електронска адреса" name="email" type="email" required />
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <Field label="Telefon" name="phone" type="tel" />
-              <Field label="Privredno društvo (opciono)" name="company" />
-            </div>
-            <div>
-              <label className="block text-[10px] uppercase tracking-display text-ink-soft mb-3">
-                Oblast od interesa
-              </label>
-              <select
-                name="oblast"
-                className="w-full bg-transparent border-b border-rule/80 py-3 text-ink focus:border-gold focus:outline-none font-light"
-              >
-                <option>Privredno pravo</option>
-                <option>M&A i transakcije</option>
-                <option>Arbitraža i sporovi</option>
-                <option>Nepokretnosti</option>
-                <option>Nasleđe i porodica</option>
-                <option>Poresko savetovanje</option>
-                <option>Drugo</option>
-              </select>
+              <Field label="Телефон" name="phone" type="tel" />
+              <div>
+                <label className="block text-[10px] uppercase tracking-display text-ink-soft mb-3">
+                  Област
+                </label>
+                <select
+                  name="oblast"
+                  className="w-full bg-transparent border-b border-rule/80 py-3 text-ink focus:border-gold-deep focus:outline-none font-light"
+                >
+                  <option>Прекршајно право</option>
+                  <option>Одштетно право</option>
+                  <option>Кривично право</option>
+                  <option>Непокретности</option>
+                  <option>Друго</option>
+                </select>
+              </div>
             </div>
             <Field
-              label="Vaša poruka"
+              label="Ваша порука"
               name="message"
               textarea
               required
-              placeholder="Ukratko opišite o čemu se radi. Sve informacije tretiramo kao strogo poverljive."
+              placeholder="Укратко опишите о чему се ради. Све информације третирамо као строго поверљиве."
             />
             <button
               type="submit"
-              className="inline-flex items-center gap-3 bg-ink text-ivory px-10 py-4 text-[11px] uppercase tracking-display hover:bg-burgundy transition-colors"
+              className="inline-flex items-center gap-3 bg-green text-ivory px-10 py-4 text-[11px] uppercase tracking-display hover:bg-green-deep transition-colors"
             >
-              Pošalji upit
+              Пошаљи упит
               <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
                 <path d="M0 5h12m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.2" />
               </svg>
             </button>
             <p className="text-xs text-ink-soft/70 leading-relaxed">
-              Slanjem upita pristajete na obradu podataka u svrhu odgovora.
-              Pogledajte našu{" "}
+              Слањем упита пристајете на обраду података у сврху одговора.
+              Погледајте нашу{" "}
               <a href="/politika-privatnosti" className="underline">
-                politiku privatnosti
+                политику приватности
               </a>
               .
             </p>
@@ -79,47 +81,66 @@ export default function Kontakt() {
         {/* Info */}
         <aside className="lg:col-span-5 lg:pl-10 lg:border-l border-rule space-y-12">
           <div>
-            <Eyebrow>Kancelarija</Eyebrow>
-            <h3 className="font-serif text-2xl mt-4 text-ink">Beograd</h3>
+            <Eyebrow>Канцеларија</Eyebrow>
+            <h3 className="font-serif text-2xl mt-4 text-green">Ниш</h3>
             <address className="not-italic mt-4 text-ink-soft leading-relaxed">
-              Knez Mihailova 24<br />
-              11000 Beograd<br />
-              Srbija
+              Обреновићева 46<br />
+              ТЦ Калча, ламела Д<br />
+              први спрат, локал 109<br />
+              18000 Ниш, Србија
             </address>
+            <a
+              href="https://maps.google.com/?q=Obrenovi%C4%87eva+46,+TC+Kal%C4%8Da,+Ni%C5%A1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-[11px] uppercase tracking-display text-green border-b border-gold-deep pb-1 hover:text-gold-deep"
+            >
+              Отвори на мапи →
+            </a>
           </div>
 
           <div>
-            <Eyebrow>Telefon</Eyebrow>
+            <Eyebrow>Адвокат Андрија Костић</Eyebrow>
             <div className="mt-4 space-y-1 text-ink-soft">
-              <div className="font-serif text-xl text-ink">+381 11 328 4900</div>
-              <div className="text-sm">Radnim danima 09—18h</div>
+              <a
+                href="tel:+381668420455"
+                className="font-serif text-xl text-green hover:text-gold-deep block"
+              >
+                066 / 8420 455
+              </a>
+              <a
+                href="mailto:adv.andrijakostic@gmail.com"
+                className="text-sm hover:text-green block"
+              >
+                adv.andrijakostic@gmail.com
+              </a>
             </div>
           </div>
 
           <div>
-            <Eyebrow>Elektronska pošta</Eyebrow>
-            <div className="mt-4 space-y-2 text-ink-soft text-sm">
-              <div>
-                <span className="block text-ink font-serif text-lg">
-                  office@kostic-advokati.rs
-                </span>
-                opšti upiti
-              </div>
-              <div>
-                <span className="block text-ink font-serif text-lg">
-                  arbitraza@kostic-advokati.rs
-                </span>
-                sporovi i arbitraža
-              </div>
+            <Eyebrow>Адвокат Александар Н. Јовић</Eyebrow>
+            <div className="mt-4 space-y-1 text-ink-soft">
+              <a
+                href="tel:+381649359118"
+                className="font-serif text-xl text-green hover:text-gold-deep block"
+              >
+                064 / 9359 118
+              </a>
+              <a
+                href="mailto:aleksandarn.jovic@gmail.com"
+                className="text-sm hover:text-green block"
+              >
+                aleksandarn.jovic@gmail.com
+              </a>
             </div>
           </div>
 
           <div className="bg-parchment border border-rule/50 p-8">
-            <Eyebrow>Diskrecija</Eyebrow>
+            <Eyebrow>Дискреција</Eyebrow>
             <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-              Sve informacije koje nam dostavite tretiramo kao strogo
-              poverljive — i pre nego što formalno postanete naš klijent.
-              Advokatska tajna je osnov našeg poziva.
+              Све информације које нам доставите третирамо као строго
+              поверљиве — и пре него што формално постанете наш клијент.
+              Адвокатска тајна је основ нашег позива.
             </p>
           </div>
         </aside>
@@ -144,7 +165,7 @@ function Field({
   placeholder?: string;
 }) {
   const cls =
-    "w-full bg-transparent border-b border-rule/80 py-3 text-ink focus:border-gold focus:outline-none font-light placeholder:text-ink-soft/40";
+    "w-full bg-transparent border-b border-rule/80 py-3 text-ink focus:border-gold-deep focus:outline-none font-light placeholder:text-ink-soft/40";
   return (
     <div>
       <label
@@ -152,7 +173,7 @@ function Field({
         className="block text-[10px] uppercase tracking-display text-ink-soft mb-3"
       >
         {label}
-        {required && <span className="text-gold ml-1">*</span>}
+        {required && <span className="text-gold-deep ml-1">*</span>}
       </label>
       {textarea ? (
         <textarea

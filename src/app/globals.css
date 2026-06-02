@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 :root {
+  --green: #113838;
+  --green-deep: #0B2A2A;
+  --green-soft: #1A4848;
   --ivory: #F5F1E8;
   --ivory-soft: #EDE7D8;
   --parchment: #FAF6EC;
   --ink: #14172B;
   --ink-soft: #2A2F4A;
-  --gold: #A8842D;
-  --gold-light: #C9A55C;
+  --gold: #C9A05C;
+  --gold-deep: #A8842D;
+  --gold-light: #E3C58A;
   --burgundy: #6B1F2A;
   --rule: #C9B98E;
 }
@@ -15,12 +19,16 @@
 @theme inline {
   --color-background: var(--ivory);
   --color-foreground: var(--ink);
+  --color-green: var(--green);
+  --color-green-deep: var(--green-deep);
+  --color-green-soft: var(--green-soft);
   --color-ivory: var(--ivory);
   --color-ivory-soft: var(--ivory-soft);
   --color-parchment: var(--parchment);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
   --color-gold-light: var(--gold-light);
   --color-burgundy: var(--burgundy);
   --color-rule: var(--rule);
@@ -88,7 +96,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .crest-shadow {
-  box-shadow: 0 1px 0 var(--rule), 0 30px 60px -30px rgba(20, 23, 43, 0.25);
+  box-shadow: 0 1px 0 var(--rule), 0 30px 60px -30px rgba(17, 56, 56, 0.35);
 }
 
 @keyframes fade-up {
@@ -102,5 +110,5 @@ h1, h2, h3, h4, h5, h6,
 
 ::selection {
   background: var(--gold);
-  color: var(--ivory);
+  color: var(--green);
 }

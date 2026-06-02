@@ -3,77 +3,69 @@ import SectionDivider from "@/components/SectionDivider";
 import Eyebrow from "@/components/Eyebrow";
 
 export const metadata = {
-  title: "O kancelariji",
+  title: "О канцеларији",
   description:
-    "Tradicija pravne struke, savremena praksa. Saznajte više o istoriji, vrednostima i pristupu Advokatske kancelarije Kostić.",
+    "Адвокатска канцеларија Костић Јовић и партнери — Ниш. Сазнајте више о нашем приступу, вредностима и тиму.",
 };
 
 const principi = [
   {
-    naslov: "Diskrecija",
+    naslov: "Доступност",
     tekst:
-      "Poverljivost odnosa sa klijentom je temelj naše prakse. Tretiramo svaku informaciju sa pažnjom dostojnom porodičnog savetnika.",
+      "Клијент увек зна ко води његов предмет и у којој је фази. Не делегирамо одговорност — ту смо од почетка до краја.",
   },
   {
-    naslov: "Pažnja",
+    naslov: "Доказивање",
     tekst:
-      "Svaki predmet vodi advokat koji ga je preuzeo. Klijent uvek zna ko za njega radi i zašto se neki pravac smatra ispravnim.",
+      "Терет доказивања је на држави, не на вама. Сваки навод суочавамо са материјалним доказима — и тамо где их нема, инсистирамо на томе.",
   },
   {
-    naslov: "Postojanost",
+    naslov: "Доследност",
     tekst:
-      "Pravna pitanja se ne završavaju jednom konsultacijom. Pratimo klijente godinama — često decenijama — kroz sve faze njihovih poslova i života.",
+      "Радимо по правилима струке и принципу in dubio pro reo. Не препоручујемо оно што и сами не бисмо урадили да смо у клијентовој ситуацији.",
   },
   {
-    naslov: "Mera",
+    naslov: "Дискреција",
     tekst:
-      "Najbolji savet nije uvek najduži. Pišemo jasno, pregovaramo mirno, sporimo se odmereno. Snaga je u preciznosti.",
+      "Адвокатска тајна је основ нашег позива. Свака информација коју нам поверите остаје у канцеларији.",
   },
-];
-
-const milestones = [
-  { godina: "1998", dogadjaj: "Osnivanje kancelarije u Beogradu." },
-  { godina: "2004", dogadjaj: "Otvoreno odeljenje za privredno pravo i M&A." },
-  { godina: "2011", dogadjaj: "Saradnja sa međunarodnim arbitražnim institucijama." },
-  { godina: "2017", dogadjaj: "Osnovan tim za savetovanje porodičnih kompanija." },
-  { godina: "2024", dogadjaj: "Otvoren ogranak za savetovanje u oblasti nepokretnosti." },
 ];
 
 export default function ONama() {
   return (
     <>
       <PageHero
-        eyebrow="O kancelariji"
-        title="Pravna tradicija, savremeni pristup."
-        intro="Kancelarija je osnovana 1998. godine sa idejom da spoji klasičnu pravnu školu i pragmatičnu poslovnu pamet. Već gotovo tri decenije zastupamo pojedince, porodice i privredne subjekte u predmetima koji zahtevaju strpljenje, znanje i diskreciju."
+        eyebrow="О канцеларији"
+        title="Канцеларија у срцу Ниша."
+        intro="Адвокатска канцеларија Костић Јовић и партнери налази се у пословном центру Калча у Нишу. Заступамо клијенте у прекршајним, одштетним и кривичним поступцима, као и у правним пословима у вези са непокретностима — на територији целе Србије."
       />
 
-      {/* History */}
+      {/* Mission */}
       <section className="mx-auto max-w-6xl px-6 lg:px-10 py-24 lg:py-32 grid lg:grid-cols-12 gap-16">
         <div className="lg:col-span-5">
-          <Eyebrow>Naša priča</Eyebrow>
-          <h2 className="font-serif text-4xl lg:text-5xl mt-6 leading-tight text-ink">
-            Kuća izgrađena <span className="italic">strpljivo</span>.
+          <Eyebrow>Наш приступ</Eyebrow>
+          <h2 className="font-serif text-4xl lg:text-5xl mt-6 leading-tight text-green">
+            Принципи испред <span className="italic">калкулације.</span>
           </h2>
         </div>
         <div className="lg:col-span-7 space-y-6 text-ink-soft leading-relaxed">
           <p>
-            Kancelarija je započela rad u jednoj prostoriji u centru Beograda,
-            sa dva advokata i jednim pisaćim stolom. U godinama koje su usledile
-            izgradili smo praksu koja se temelji na ličnom kontaktu sa klijentom
-            i preciznom pravnom radu — bez agresivne tržišne ekspanzije.
+            Наша канцеларија гради праксу на једноставној идеји: клијенту дугујемо
+            пажњу, познавање прописа и доследну одбрану — без обзира на то да ли
+            се ради о прекршајном поступку из саобраћаја или о захтеву за накнаду
+            штете од осигурања.
           </p>
           <p>
-            Danas zapošljavamo dvanaest advokata i saradnika koji pokrivaju
-            ključne oblasti privrednog prava, arbitraže i upravljanja imovinom.
-            Pratimo nekoliko porodičnih kompanija od osnivanja, što nam je
-            omogućilo da razumemo poslovni svet iz prve ruke — ne samo iz
-            spisa predmeta.
+            Заступамо клијенте у целој Србији захваљујући развијеној мрежи
+            адвоката сарадника. Без обзира на то у којем граду се води поступак,
+            наш клијент има свог адвоката који води његов предмет и објашњава му
+            сваки корак.
           </p>
           <p>
-            Princip ostaje isti: malo klijenata, mnogo pažnje, dosledan
-            kvalitet. Verujemo da je to formula koja proizvodi rezultate koji
-            traju.
+            Поред адвокатских послова, дугогодишња сарадња са овлашћеним
+            проценитељима штете и судским вештацима различитих струка омогућава
+            нам да у одштетним предметима осигурамо објективну и стручну процену
+            која значајно јача позицију клијента.
           </p>
         </div>
       </section>
@@ -82,21 +74,21 @@ export default function ONama() {
       <section className="bg-parchment border-y border-rule/40">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32">
           <div className="text-center">
-            <SectionDivider label="Vrednosti" />
-            <h2 className="font-serif text-4xl lg:text-5xl text-ink">
-              Četiri principa kuće
+            <SectionDivider label="Вредности" />
+            <h2 className="font-serif text-4xl lg:text-5xl text-green">
+              Четири правила куће
             </h2>
           </div>
           <div className="mt-16 grid md:grid-cols-2 gap-px bg-rule/40 border border-rule/40">
             {principi.map((p, i) => (
               <div key={p.naslov} className="bg-ivory p-10 lg:p-14">
                 <div className="flex items-baseline gap-4 mb-5">
-                  <span className="font-serif italic text-gold text-2xl">
+                  <span className="font-serif italic text-gold-deep text-2xl">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="h-px flex-1 bg-rule" />
                 </div>
-                <h3 className="font-serif text-3xl text-ink mb-4">{p.naslov}</h3>
+                <h3 className="font-serif text-3xl text-green mb-4">{p.naslov}</h3>
                 <p className="text-ink-soft leading-relaxed font-light">
                   {p.tekst}
                 </p>
@@ -106,29 +98,18 @@ export default function ONama() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="mx-auto max-w-5xl px-6 lg:px-10 py-24 lg:py-32">
-        <div className="text-center">
-          <SectionDivider label="Putokazi" />
-          <h2 className="font-serif text-4xl lg:text-5xl text-ink">
-            Trenuci koji su nas oblikovali
-          </h2>
-        </div>
-        <div className="mt-16 space-y-px bg-rule/40 border-y border-rule/40">
-          {milestones.map((m) => (
-            <div
-              key={m.godina}
-              className="bg-ivory grid grid-cols-12 items-center px-6 py-8"
-            >
-              <div className="col-span-3 font-serif text-3xl text-gold italic">
-                {m.godina}
-              </div>
-              <div className="col-span-9 text-ink-soft leading-relaxed">
-                {m.dogadjaj}
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* Coverage */}
+      <section className="mx-auto max-w-5xl px-6 lg:px-10 py-24 lg:py-32 text-center">
+        <SectionDivider label="Територија" />
+        <h2 className="font-serif text-4xl lg:text-5xl text-green">
+          Заступамо широм Србије
+        </h2>
+        <p className="mt-6 max-w-2xl mx-auto text-ink-soft leading-relaxed">
+          Седиште канцеларије је у Нишу, али захваљујући мрежи адвоката
+          сарадника, заступамо клијенте пред свим прекршајним судовима,
+          парничним судовима и кривичним органима у Србији — од Београда и
+          Новог Сада до Крагујевца, Лесковца, Врања и осталих градова.
+        </p>
       </section>
     </>
   );

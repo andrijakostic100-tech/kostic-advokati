@@ -15,7 +15,7 @@ export default function PageHero({
         <div className="flex justify-center">
           <Eyebrow>{eyebrow}</Eyebrow>
         </div>
-        <h1 className="font-serif text-5xl lg:text-7xl leading-[1.05] mt-6 text-ink">
+        <h1 className="font-serif text-5xl lg:text-7xl leading-[1.05] mt-6 text-green">
           {title}
         </h1>
         {intro && (

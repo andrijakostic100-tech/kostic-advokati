@@ -2,89 +2,122 @@ import PageHero from "@/components/PageHero";
 import Eyebrow from "@/components/Eyebrow";
 
 export const metadata = {
-  title: "Oblasti prava",
+  title: "Области права",
   description:
-    "Privredno pravo, M&A, arbitraža, nepokretnosti, nasleđe i poresko savetovanje — oblasti u kojima nudimo dugogodišnju ekspertizu.",
+    "Прекршајно, одштетно и кривично право, непокретности — главне области у којима заступамо клијенте.",
 };
 
 const oblasti = [
   {
     rim: "I",
-    naziv: "Privredno pravo",
+    slug: "prekrsajno-pravo",
+    naziv: "Прекршајно право",
+    podnaslov: "Када вам прети казна, забрана вожње или казнени поени.",
     intro:
-      "Pravna podrška društvima kapitala i njihovim akcionarima u svakodnevnom poslovanju.",
-    stavke: [
-      "Osnivanje i statusne promene privrednih društava",
-      "Korporativno upravljanje i sednice organa",
-      "Akcionarski sporazumi i ulagački aranžmani",
-      "Komercijalni ugovori i opšti uslovi poslovanja",
-      "Usklađenost i interne politike (compliance)",
+      "Заступамо окривљене у прекршајним поступцима пред прекршајним судовима и Прекршајним апелационим судом, са посебним искуством у предметима из области безбедности саобраћаја на путевима.",
+    sekcije: [
+      {
+        naslov: "Шта обухвата наша пракса",
+        stavke: [
+          "Саобраћајни прекршаји — управљање возилом под дејством алкохола и психоактивних супстанци, одбијање алкотестирања, пролазак кроз црвено светло, прекорачење брзине, насилничка вожња и други прекршаји из Закона о безбедности саобраћаја на путевима",
+          "Заштитне мере и казнени поени — оспоравање и ублажавање мере забране управљања моторним возилом, као и поступање у вези са израженим казненим поенима",
+          "Царински прекршаји — недозвољени унос и изношење робе, нетачно пријављивање, прекршаји у вези са царинским и девизним прописима",
+          "Прекршаји против јавног реда и мира и комунални прекршаји",
+          "Састављање писаних одбрана у првостепеном поступку и изјављивање жалби другостепеном суду",
+        ],
+      },
     ],
+    paragraph: `У сваком предмету полазимо од начела да је терет доказивања на подносиоцу захтева, а не на окривљеном. Пажљиво анализирамо доказну грађу, указујемо на изостанак материјалних доказа (фотографија, видео-записа, евиденција о исправности мерних уређаја) и доследно штитимо право на одбрану и право на правично суђење зајемчено Уставом и Европском конвенцијом о људским правима — укључујући право окривљеног да испитује сведоке оптужбе.`,
+    paragraph2: `Циљ нам је да сваки навод из захтева за покретање прекршајног поступка буде поткрепљен поузданим доказима, а да се, тамо где основа за одговорност нема, доследно примени начело in dubio pro reo.`,
+    callout:
+      "Покривамо целу Србију. Захваљујући широкој мрежи адвоката сарадника, заступамо клијенте пред свим прекршајним судовима и Прекршајним апелационим судом, без обзира на то где се поступак води.",
   },
   {
     rim: "II",
-    naziv: "M&A i transakcije",
+    slug: "odstetno-pravo",
+    naziv: "Одштетно право",
+    podnaslov: "Ви се опоравите — о свему осталом бринемо ми.",
     intro:
-      "Pratimo klijente kroz složene transakcije — od ideje do potpisa i nakon zatvaranja.",
-    stavke: [
-      "Pravna analiza (due diligence) ciljnih društava",
-      "Strukturiranje akvizicija i prodaja",
-      "Pregovaranje SPA, SHA i pratećih ugovora",
-      "Regulatorne saglasnosti i konkurencija",
-      "Postupci nakon zatvaranja transakcije",
+      "Специјализовани смо за одштетно право — заступамо оштећене пред осигуравајућим друштвима, судовима и органима унутрашњих послова, и стајемо иза вас од тренутка настанка штете до коначне наплате.",
+    sekcije: [
+      {
+        naslov: "Врсте штете коју покривамо",
+        stavke: [
+          "Саобраћајне незгоде — материјална штета на возилу и нематеријална штета услед претрпљених повреда",
+          "Повреде на раду — обезбеђивање накнаде од послодавца и осигурања",
+          "Падови на јавним површинама, у шахтама, на леду и неодржаваним стазама",
+          "Уједи паса и других животиња",
+          "Сви остали случајеви материјалне и нематеријалне штете",
+        ],
+      },
+      {
+        naslov: "Шта све радимо за вас",
+        stavke: [
+          "Прибављање и комплетирање целокупне документације неопходне за остваривање права на накнаду",
+          "Стручну процену материјалне и нематеријалне штете преко наших овлашћених проценитеља",
+          "Подношење и вођење одштетних захтева пред осигуравајућим друштвима",
+          "Заступање у судским поступцима ради остваривања пуне накнаде",
+          "Заступање пред органима унутрашњих послова",
+          "Наплату досуђене односно признате штете",
+        ],
+      },
     ],
+    paragraph: `Заступамо клијенте у свим фазама поступка — у вансудском поступку пред осигуравајућим друштвима, у парничним поступцима пред надлежним судовима, као и у поступцима пред органима унутрашњих послова. Без обзира да ли се ради о материјалној штети на возилу или о нематеријалној штети услед претрпљених повреда, преузимамо комплетан посао уместо вас.`,
+    paragraph2: `Захваљујући развијеној мрежи овлашћених проценитеља штете и дугогодишњој успешној сарадњи са судским вештацима различитих струка, у могућности смо да обезбедимо стручну и објективну процену сваке штете, што значајно јача позицију клијента у поступку наплате.`,
+    callout:
+      "Наш циљ је да клијент оствари максималну накнаду која му по закону припада, уз минимум обавеза и стреса на његовој страни.",
   },
   {
     rim: "III",
-    naziv: "Arbitraža i sporovi",
+    slug: "krivicno-pravo",
+    naziv: "Кривично право",
+    podnaslov: "Одбрана у којој ништа није препуштено случају.",
     intro:
-      "Zastupanje u privrednim sporovima i međunarodnoj arbitraži pred vodećim institucijama.",
-    stavke: [
-      "Privredni sporovi pred sudovima u Srbiji",
-      "Domaća arbitraža (Stalni arbitražni sud PKS)",
-      "Međunarodna arbitraža (ICC, VIAC, LCIA)",
-      "Priznanje i izvršenje stranih odluka",
-      "Investicione arbitraže i ICSID postupci",
+      "Заступамо окривљене и оштећене у свим фазама кривичног поступка — од преткривичног поступка и истраге, преко главног претреса, до правноснажне пресуде и поступака по ванредним правним лековима.",
+    sekcije: [
+      {
+        naslov: "Чиме се бавимо",
+        stavke: [
+          "Одбрана окривљених у свим фазама поступка — пред полицијом, тужилаштвом и судом",
+          "Заступање оштећених — подношење кривичних пријава, обележавање у својству оштећеног, имовинско-правни захтев",
+          "Поступци по кривичним делима против безбедности јавног саобраћаја, имовине, личности и службене дужности",
+          "Кривична дела у вези са злоупотребом опојних дрога",
+          "Изјављивање жалби и ванредних правних лекова — захтев за заштиту законитости, понављање поступка",
+          "Поступци условног отпуста и заштитног надзора",
+        ],
+      },
     ],
+    paragraph: `Кривични поступак изискује пажљиву и доследну стратегију одбране од самог почетка. Од прве полицијске радње — саслушања, претреса, привремног одузимања предмета — до последње одлуке суда, све што се пропусти може имати последице које се касније тешко исправљају.`,
+    paragraph2: `Полазимо од претпоставке невиности и доследно штитимо процесна права окривљеног. Указујемо на сваку повреду закона, оспоравамо незакоnito прибављене доказе и инсистирамо да се сумње тумаче у корист окривљеног.`,
+    callout:
+      "У сваком предмету заступамо принцип да је слобода правило, а лишење слободе изузетак — и сваки изузетак мора бити најстроже образложен.",
   },
   {
     rim: "IV",
-    naziv: "Nepokretnosti",
+    slug: "nepokretnosti",
+    naziv: "Непокретности",
+    podnaslov: "Сигурност у послу који не трпи импровизацију.",
     intro:
-      "Pravna pomoć u promet, razvoju i finansiranju nepokretnosti — od stana do logističkih kompleksa.",
-    stavke: [
-      "Promet poslovnih i stambenih nepokretnosti",
-      "Pravna analiza vlasništva i tereta",
-      "Razvoj projekata, dozvole i ugovori sa izvođačima",
-      "Zakup i upravljanje imovinom",
-      "Finansiranje i hipotekarno obezbeđenje",
+      "Пружамо комплетну правну подршку у промету и управљању непокретностима — од посредовања и преговора до уписа права у катастар и решавања имовинско-правних односа.",
+    sekcije: [
+      {
+        naslov: "Шта обухвата наша пракса",
+        stavke: [
+          "Уговори о купопродаји непокретности (станови, куће, пословни простор, земљиште)",
+          "Уговори о закупу и подзакупу",
+          "Уговори о доживотном издржавању и поклону",
+          "Посредовање у промету непокретности",
+          "Упис права у катастар непокретности",
+          "Забележбе, хипотеке и оптерећења",
+          "Решавање имовинско-правних односа, утврђивање права својине",
+          "Парнични поступци у вези са непокретностима",
+        ],
+      },
     ],
-  },
-  {
-    rim: "V",
-    naziv: "Nasleđe i porodica",
-    intro:
-      "Diskretna podrška u pitanjima koja prevazilaze granicu pravnog savetovanja.",
-    stavke: [
-      "Planiranje nasleđa i sastavljanje testamenta",
-      "Vođenje ostavinskih postupaka",
-      "Bračni ugovori i imovinski odnosi",
-      "Porodična uprava i sukcesija u kompanijama",
-      "Fondacije i trastovi (uz inostrane saradnike)",
-    ],
-  },
-  {
-    rim: "VI",
-    naziv: "Poresko savetovanje",
-    intro:
-      "Strateški pristup porezima — od svakodnevne usaglašenosti do složenih međunarodnih struktura.",
-    stavke: [
-      "Poreska optimizacija poslovanja",
-      "Transferne cene i međukompanijski odnosi",
-      "Postupci pred poreskom upravom",
-      "Ugovori o izbegavanju dvostrukog oporezivanja",
-      "Strukturiranje međunarodnih ulaganja",
-    ],
+    paragraph: `Свака непокретност има своју причу — терет, претходне власнике, могуће спорове. Пре потписивања било ког уговора, пажљиво проверавамо правни статус непокретности у катастру и осталим јавним регистрима, и упозоравамо клијента на сваки ризик који би у будућности могао да угрози његово право.`,
+    paragraph2: `За клијенте који купују или продају непокретност преузимамо целокупну правну страну посла — од нацрта уговора и провере документације, преко овере код јавног бележника, до уписа у катастар.`,
+    callout:
+      "Циљ нам је да клијент уђе у посао са пуним познавањем правне ситуације — и да изађе из њега са правом које нико не може успешно оспорити.",
   },
 ];
 
@@ -92,38 +125,69 @@ export default function Oblasti() {
   return (
     <>
       <PageHero
-        eyebrow="Oblasti prava"
-        title="Šest stubova naše prakse."
-        intro="Specijalizovani smo za pravne oblasti u kojima i sami biramo klijente — kako bismo svakom predmetu mogli da pristupimo sa odgovarajućom pažnjom i ekspertizom."
+        eyebrow="Области права"
+        title="Чиме се бавимо."
+        intro="Фокусирамо се на четири области у којима наша канцеларија има највише искуства и резултата. У сваком предмету спајамо пажљиву анализу, доследну одбрану и поштовање правила струке."
       />
 
-      <section className="mx-auto max-w-6xl px-6 lg:px-10 py-24 lg:py-32 space-y-24">
-        {oblasti.map((o, i) => (
-          <article key={o.naziv} className="grid lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-4">
-              <div className="font-serif italic text-7xl text-gold opacity-80">
-                {o.rim}
+      <section className="mx-auto max-w-6xl px-6 lg:px-10 py-24 lg:py-32 space-y-32">
+        {oblasti.map((o) => (
+          <article key={o.naziv} id={o.slug} className="scroll-mt-28">
+            <div className="grid lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-4">
+                <div className="font-serif italic text-7xl text-gold-deep opacity-80">
+                  {o.rim}
+                </div>
+                <Eyebrow>Област</Eyebrow>
+                <h2 className="font-serif text-4xl lg:text-5xl mt-6 leading-tight text-green">
+                  {o.naziv}
+                </h2>
+                <p className="mt-4 font-serif italic text-xl text-ink-soft">
+                  {o.podnaslov}
+                </p>
               </div>
-              <Eyebrow>Oblast {i + 1}</Eyebrow>
-              <h2 className="font-serif text-4xl lg:text-5xl mt-6 leading-tight text-ink">
-                {o.naziv}
-              </h2>
-            </div>
-            <div className="lg:col-span-8 lg:pl-10 lg:border-l border-rule">
-              <p className="text-lg text-ink-soft font-light leading-relaxed mb-8">
-                {o.intro}
-              </p>
-              <ul className="space-y-4">
-                {o.stavke.map((s) => (
-                  <li
-                    key={s}
-                    className="flex items-start gap-4 text-ink-soft border-b border-rule/40 pb-4"
-                  >
-                    <span className="text-gold mt-1.5">◆</span>
-                    <span className="leading-relaxed">{s}</span>
-                  </li>
+              <div className="lg:col-span-8 lg:pl-10 lg:border-l border-rule space-y-8">
+                <p className="text-lg text-ink-soft font-light leading-relaxed">
+                  {o.intro}
+                </p>
+
+                {o.sekcije.map((s) => (
+                  <div key={s.naslov}>
+                    <h3 className="text-[11px] uppercase tracking-display text-gold-deep mb-5">
+                      {s.naslov}
+                    </h3>
+                    <ul className="space-y-4">
+                      {s.stavke.map((stavka) => (
+                        <li
+                          key={stavka}
+                          className="flex items-start gap-4 text-ink-soft border-b border-rule/40 pb-4"
+                        >
+                          <span className="text-gold-deep mt-1.5 flex-shrink-0">◆</span>
+                          <span className="leading-relaxed">{stavka}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
-              </ul>
+
+                {o.paragraph && (
+                  <p className="text-ink-soft leading-relaxed font-light">
+                    {o.paragraph}
+                  </p>
+                )}
+                {o.paragraph2 && (
+                  <p className="text-ink-soft leading-relaxed font-light">
+                    {o.paragraph2}
+                  </p>
+                )}
+                {o.callout && (
+                  <div className="border-l-2 border-gold-deep bg-parchment p-6">
+                    <p className="font-serif text-xl italic text-green leading-snug">
+                      {o.callout}
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
           </article>
         ))}
