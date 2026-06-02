@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --ivory: #F5F1E8;
+  --ivory-soft: #EDE7D8;
+  --parchment: #FAF6EC;
+  --ink: #14172B;
+  --ink-soft: #2A2F4A;
+  --gold: #A8842D;
+  --gold-light: #C9A55C;
+  --burgundy: #6B1F2A;
+  --rule: #C9B98E;
+}
+
+@theme inline {
+  --color-background: var(--ivory);
+  --color-foreground: var(--ink);
+  --color-ivory: var(--ivory);
+  --color-ivory-soft: var(--ivory-soft);
+  --color-parchment: var(--parchment);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-burgundy: var(--burgundy);
+  --color-rule: var(--rule);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-sans), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-serif {
+  font-family: var(--font-serif), "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
+
+.tracking-display {
+  letter-spacing: 0.18em;
+}
+
+.tracking-eyebrow {
+  letter-spacing: 0.32em;
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+}
+
+.gold-divider {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--gold);
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: "";
+  width: 2.5rem;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+.parchment-grain {
+  background-color: var(--ivory);
+  background-image:
+    radial-gradient(rgba(168, 132, 45, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(20, 23, 43, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px, 36px 36px;
+  background-position: 0 0, 12px 12px;
+}
+
+.crest-shadow {
+  box-shadow: 0 1px 0 var(--rule), 0 30px 60px -30px rgba(20, 23, 43, 0.25);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fade-up 0.9s ease-out both;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ivory);
+}
