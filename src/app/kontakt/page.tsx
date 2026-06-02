@@ -1,5 +1,6 @@
 import PageHero from "@/components/PageHero";
 import Eyebrow from "@/components/Eyebrow";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Контакт",
@@ -17,68 +18,14 @@ export default function Kontakt() {
       />
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32 grid lg:grid-cols-12 gap-16">
-        {/* Form */}
         <div className="lg:col-span-7">
           <Eyebrow>Поверљиви упит</Eyebrow>
           <h2 className="font-serif text-3xl lg:text-4xl mt-6 mb-12 text-green">
             Реците нам о чему се ради.
           </h2>
-          <form
-            action="mailto:adv.andrijakostic@gmail.com"
-            method="post"
-            encType="text/plain"
-            className="space-y-8"
-          >
-            <div className="grid md:grid-cols-2 gap-6">
-              <Field label="Име и презиме" name="name" required />
-              <Field label="Електронска адреса" name="email" type="email" required />
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Field label="Телефон" name="phone" type="tel" />
-              <div>
-                <label className="block text-[10px] uppercase tracking-display text-ink-soft mb-3">
-                  Област
-                </label>
-                <select
-                  name="oblast"
-                  className="w-full bg-transparent border-b border-rule/80 py-3 text-ink focus:border-gold-deep focus:outline-none font-light"
-                >
-                  <option>Прекршајно право</option>
-                  <option>Одштетно право</option>
-                  <option>Кривично право</option>
-                  <option>Непокретности</option>
-                  <option>Друго</option>
-                </select>
-              </div>
-            </div>
-            <Field
-              label="Ваша порука"
-              name="message"
-              textarea
-              required
-              placeholder="Укратко опишите о чему се ради. Све информације третирамо као строго поверљиве."
-            />
-            <button
-              type="submit"
-              className="inline-flex items-center gap-3 bg-green text-ivory px-10 py-4 text-[11px] uppercase tracking-display hover:bg-green-deep transition-colors"
-            >
-              Пошаљи упит
-              <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
-                <path d="M0 5h12m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.2" />
-              </svg>
-            </button>
-            <p className="text-xs text-ink-soft/70 leading-relaxed">
-              Слањем упита пристајете на обраду података у сврху одговора.
-              Погледајте нашу{" "}
-              <a href="/politika-privatnosti" className="underline">
-                политику приватности
-              </a>
-              .
-            </p>
-          </form>
+          <ContactForm />
         </div>
 
-        {/* Info */}
         <aside className="lg:col-span-5 lg:pl-10 lg:border-l border-rule space-y-12">
           <div>
             <Eyebrow>Канцеларија</Eyebrow>
@@ -146,54 +93,5 @@ export default function Kontakt() {
         </aside>
       </section>
     </>
-  );
-}
-
-function Field({
-  label,
-  name,
-  type = "text",
-  required = false,
-  textarea = false,
-  placeholder,
-}: {
-  label: string;
-  name: string;
-  type?: string;
-  required?: boolean;
-  textarea?: boolean;
-  placeholder?: string;
-}) {
-  const cls =
-    "w-full bg-transparent border-b border-rule/80 py-3 text-ink focus:border-gold-deep focus:outline-none font-light placeholder:text-ink-soft/40";
-  return (
-    <div>
-      <label
-        htmlFor={name}
-        className="block text-[10px] uppercase tracking-display text-ink-soft mb-3"
-      >
-        {label}
-        {required && <span className="text-gold-deep ml-1">*</span>}
-      </label>
-      {textarea ? (
-        <textarea
-          id={name}
-          name={name}
-          rows={5}
-          required={required}
-          placeholder={placeholder}
-          className={cls + " resize-none"}
-        />
-      ) : (
-        <input
-          id={name}
-          name={name}
-          type={type}
-          required={required}
-          placeholder={placeholder}
-          className={cls}
-        />
-      )}
-    </div>
   );
 }
