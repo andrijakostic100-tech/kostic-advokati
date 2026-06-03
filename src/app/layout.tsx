@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { LanguageProvider } from "@/i18n/Provider";
 
 const serif = Cormorant_Garamond({
   variable: "--font-serif",
@@ -21,15 +22,15 @@ const sans = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kostic-jovic.rs"),
   title: {
-    default: "Адвокатска канцеларија Костић Јовић и партнери — Ниш",
-    template: "%s · Костић Јовић и партнери",
+    default: "Advokatska kancelarija Kostić Jović i partneri — Niš",
+    template: "%s · Kostić Jović i partneri",
   },
   description:
-    "Адвокатска канцеларија Костић Јовић и партнери — прекршајно, одштетно и кривично право, непокретности. Заступамо клијенте широм Србије.",
+    "Advokatska kancelarija Kostić Jović i partneri — prekršajno, odštetno i krivično pravo, nepokretnosti. Zastupamo klijente širom Srbije.",
   openGraph: {
-    title: "Костић Јовић и партнери",
+    title: "Kostić Jović i partneri",
     description:
-      "Адвокатска канцеларија из Ниша — прекршајно, одштетно, кривично право и непокретности.",
+      "Advokatska kancelarija iz Niša — prekršajno, odštetno, krivično pravo i nepokretnosti.",
     type: "website",
     locale: "sr_RS",
     images: ["/logo-color.png"],
@@ -50,9 +51,11 @@ export default function RootLayout({
       className={`${serif.variable} ${sans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ivory text-ink">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
