@@ -3,31 +3,31 @@ import SectionDivider from "@/components/SectionDivider";
 import Eyebrow from "@/components/Eyebrow";
 
 export const metadata = {
-  title: "О канцеларији",
+  title: "O kancelariji",
   description:
-    "Адвокатска канцеларија Костић Јовић и партнери — Ниш. Сазнајте више о нашем приступу, вредностима и тиму.",
+    "Advokatska kancelarija Kostić Jović i partneri — Niš. Saznajte više o našem pristupu, vrednostima i timu.",
 };
 
 const principi = [
   {
-    naslov: "Доступност",
+    naslov: "Dostupnost",
     tekst:
-      "Клијент увек зна ко води његов предмет и у којој је фази. Не делегирамо одговорност — ту смо од почетка до краја.",
+      "Klijent uvek zna ko vodi njegov predmet i u kojoj je fazi. Ne delegiramo odgovornost — tu smo od početka do kraja.",
   },
   {
-    naslov: "Доказивање",
+    naslov: "Dokazivanje",
     tekst:
-      "Терет доказивања је на држави, не на вама. Сваки навод суочавамо са материјалним доказима — и тамо где их нема, инсистирамо на томе.",
+      "Teret dokazivanja je na državi, ne na vama. Svaki navod suočavamo sa materijalnim dokazima — i tamo gde ih nema, insistiramo na tome.",
   },
   {
-    naslov: "Доследност",
+    naslov: "Doslednost",
     tekst:
-      "Радимо по правилима струке и принципу in dubio pro reo. Не препоручујемо оно што и сами не бисмо урадили да смо у клијентовој ситуацији.",
+      "Radimo po pravilima struke i principu in dubio pro reo. Ne preporučujemo ono što i sami ne bismo uradili da smo u klijentovoj situaciji.",
   },
   {
-    naslov: "Дискреција",
+    naslov: "Diskrecija",
     tekst:
-      "Адвокатска тајна је основ нашег позива. Свака информација коју нам поверите остаје у канцеларији.",
+      "Advokatska tajna je osnov našeg poziva. Svaka informacija koju nam poverite ostaje u kancelariji.",
   },
 ];
 
@@ -35,37 +35,37 @@ export default function ONama() {
   return (
     <>
       <PageHero
-        eyebrow="О канцеларији"
-        title="Канцеларија у срцу Ниша."
-        intro="Адвокатска канцеларија Костић Јовић и партнери налази се у пословном центру Калча у Нишу. Заступамо клијенте у прекршајним, одштетним и кривичним поступцима, као и у правним пословима у вези са непокретностима — на територији целе Србије."
+        eyebrow="O kancelariji"
+        title="Kancelarija u srcu Niša."
+        intro="Advokatska kancelarija Kostić Jović i partneri nalazi se u poslovnom centru Kalča u Nišu. Zastupamo klijente u prekršajnim, odštetnim i krivičnim postupcima, kao i u pravnim poslovima u vezi sa nepokretnostima — na teritoriji cele Srbije."
       />
 
       {/* Mission */}
       <section className="mx-auto max-w-6xl px-6 lg:px-10 py-24 lg:py-32 grid lg:grid-cols-12 gap-16">
         <div className="lg:col-span-5">
-          <Eyebrow>Наш приступ</Eyebrow>
+          <Eyebrow>Naš pristup</Eyebrow>
           <h2 className="font-serif text-4xl lg:text-5xl mt-6 leading-tight text-green">
-            Принципи испред <span className="italic">калкулације.</span>
+            Principi ispred <span className="italic">kalkulacije.</span>
           </h2>
         </div>
         <div className="lg:col-span-7 space-y-6 text-ink-soft leading-relaxed">
           <p>
-            Наша канцеларија гради праксу на једноставној идеји: клијенту дугујемо
-            пажњу, познавање прописа и доследну одбрану — без обзира на то да ли
-            се ради о прекршајном поступку из саобраћаја или о захтеву за накнаду
-            штете од осигурања.
+            Naša kancelarija gradi praksu na jednostavnoj ideji: klijentu dugujemo
+            pažnju, poznavanje propisa i doslednu odbranu — bez obzira na to da li
+            se radi o prekršajnom postupku iz saobraćaja ili o zahtevu za naknadu
+            štete od osiguranja.
           </p>
           <p>
-            Заступамо клијенте у целој Србији захваљујући развијеној мрежи
-            адвоката сарадника. Без обзира на то у којем граду се води поступак,
-            наш клијент има свог адвоката који води његов предмет и објашњава му
-            сваки корак.
+            Zastupamo klijente u celoj Srbiji zahvaljujući razvijenoj mreži
+            advokata saradnika. Bez obzira na to u kojem gradu se vodi postupak,
+            naš klijent ima svog advokata koji vodi njegov predmet i objašnjava mu
+            svaki korak.
           </p>
           <p>
-            Поред адвокатских послова, дугогодишња сарадња са овлашћеним
-            проценитељима штете и судским вештацима различитих струка омогућава
-            нам да у одштетним предметима осигурамо објективну и стручну процену
-            која значајно јача позицију клијента.
+            Pored advokatskih poslova, dugogodišnja saradnja sa ovlašćenim
+            procentiteljima štete i sudskim veštacima različitih struka omogućava
+            nam da u odštetnim predmetima osiguramo objektivnu i stručnu procenu
+            koja značajno jača poziciju klijenta.
           </p>
         </div>
       </section>
@@ -74,9 +74,9 @@ export default function ONama() {
       <section className="bg-parchment border-y border-rule/40">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32">
           <div className="text-center">
-            <SectionDivider label="Вредности" />
+            <SectionDivider label="Vrednosti" />
             <h2 className="font-serif text-4xl lg:text-5xl text-green">
-              Четири правила куће
+              Četiri pravila kuće
             </h2>
           </div>
           <div className="mt-16 grid md:grid-cols-2 gap-px bg-rule/40 border border-rule/40">
@@ -100,15 +100,15 @@ export default function ONama() {
 
       {/* Coverage */}
       <section className="mx-auto max-w-5xl px-6 lg:px-10 py-24 lg:py-32 text-center">
-        <SectionDivider label="Територија" />
+        <SectionDivider label="Teritorija" />
         <h2 className="font-serif text-4xl lg:text-5xl text-green">
-          Заступамо широм Србије
+          Zastupamo širom Srbije
         </h2>
         <p className="mt-6 max-w-2xl mx-auto text-ink-soft leading-relaxed">
-          Седиште канцеларије је у Нишу, али захваљујући мрежи адвоката
-          сарадника, заступамо клијенте пред свим прекршајним судовима,
-          парничним судовима и кривичним органима у Србији — од Београда и
-          Новог Сада до Крагујевца, Лесковца, Врања и осталих градова.
+          Sedište kancelarije je u Nišu, ali zahvaljujući mreži advokata
+          saradnika, zastupamo klijente pred svim prekršajnim sudovima,
+          parničnim sudovima i krivičnim organima u Srbiji — od Beograda i
+          Novog Sada do Kragujevca, Leskovca, Vranja i ostalih gradova.
         </p>
       </section>
     </>

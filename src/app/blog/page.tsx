@@ -81,7 +81,7 @@ export default function BlogIndex() {
 
         <div className="text-center max-w-2xl mx-auto">
           <p className="text-ink-soft leading-relaxed">
-            Novi tekstovi izlaze svake nedelje. Ako imate pravno pitanje na koje
+            Nove tekstove objavljujemo redovno. Ako imate pravno pitanje na koje
             biste želeli da pišemo, javite nam — često birane teme postaju naši
             naredni tekstovi.
           </p>

@@ -2,16 +2,16 @@
 
 import { useState } from "react";
 
-// На коју адресу стижу упити са сајта
+// Na koju adresu stižu upiti sa sajta
 const PRIMARY_EMAIL = "adv.andrijakostic@gmail.com";
 const CC_EMAIL = "aleksandarn.jovic@gmail.com";
 
 const OBLASTI = [
-  "Прекршајно право",
-  "Одштетно право",
-  "Кривично право",
-  "Непокретности",
-  "Друго",
+  "Prekršajno pravo",
+  "Odštetno pravo",
+  "Krivično pravo",
+  "Nepokretnosti",
+  "Drugo",
 ];
 
 type Status = "idle" | "sending" | "ok" | "error";
@@ -29,8 +29,7 @@ export default function ContactForm() {
     const form = e.currentTarget;
     const fd = new FormData(form);
 
-    // FormSubmit options
-    fd.append("_subject", `Упит са сајта — ${fd.get("oblast") || "Општи упит"}`);
+    fd.append("_subject", `Upit sa sajta — ${fd.get("oblast") || "Opšti upit"}`);
     fd.append("_template", "table");
     fd.append("_captcha", "false");
     fd.append("_cc", CC_EMAIL);
@@ -50,10 +49,10 @@ export default function ContactForm() {
         setStatus("ok");
         form.reset();
       } else {
-        throw new Error(data.message || "Грешка при слању");
+        throw new Error(data.message || "Greška pri slanju");
       }
     } catch (err: unknown) {
-      const message = err instanceof Error ? err.message : "Непозната грешка";
+      const message = err instanceof Error ? err.message : "Nepoznata greška";
       setStatus("error");
       setErrorMsg(message);
     }
@@ -63,14 +62,14 @@ export default function ContactForm() {
     return (
       <div className="border border-gold-deep/60 bg-parchment p-10 text-center">
         <div className="text-[11px] uppercase tracking-display text-gold-deep mb-4">
-          Хвала вам
+          Hvala vam
         </div>
         <h3 className="font-serif text-3xl text-green leading-tight">
-          Ваш упит је послат.
+          Vaš upit je poslat.
         </h3>
         <p className="mt-5 text-ink-soft leading-relaxed">
-          Одговарамо у року од једног радног дана. Уколико је предмет хитан,
-          позовите нас директно.
+          Odgovaramo u roku od jednog radnog dana. Ukoliko je predmet hitan,
+          pozovite nas direktno.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
@@ -90,7 +89,7 @@ export default function ContactForm() {
           onClick={() => setStatus("idle")}
           className="mt-8 text-[10px] uppercase tracking-display text-ink-soft underline"
         >
-          Пошаљи нови упит
+          Pošalji novi upit
         </button>
       </div>
     );
@@ -98,22 +97,21 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} className="space-y-8">
-      {/* Anti-bot honeypot */}
       <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
 
       <div className="grid md:grid-cols-2 gap-6">
-        <Field label="Име и презиме" name="name" required />
-        <Field label="Електронска адреса" name="email" type="email" required />
+        <Field label="Ime i prezime" name="name" required />
+        <Field label="Elektronska adresa" name="email" type="email" required />
       </div>
       <div className="grid md:grid-cols-2 gap-6">
-        <Field label="Телефон" name="phone" type="tel" />
+        <Field label="Telefon" name="phone" type="tel" />
         <div>
           <label className="block text-[10px] uppercase tracking-display text-ink-soft mb-3">
-            Област
+            Oblast
           </label>
           <select
             name="oblast"
-            defaultValue="Прекршајно право"
+            defaultValue="Prekršajno pravo"
             className="w-full bg-transparent border-b border-rule/80 py-3 text-ink focus:border-gold-deep focus:outline-none font-light"
           >
             {OBLASTI.map((o) => (
@@ -123,17 +121,17 @@ export default function ContactForm() {
         </div>
       </div>
       <Field
-        label="Ваша порука"
+        label="Vaša poruka"
         name="message"
         textarea
         required
-        placeholder="Укратко опишите о чему се ради. Све информације третирамо као строго поверљиве."
+        placeholder="Ukratko opišite o čemu se radi. Sve informacije tretiramo kao strogo poverljive."
       />
 
       {status === "error" && (
         <div className="border border-burgundy/40 bg-burgundy/5 p-4 text-sm text-burgundy">
-          Слање није успело: {errorMsg}. Молимо покушајте поново или нас позовите
-          директно на 066 / 8420 455.
+          Slanje nije uspelo: {errorMsg}. Molimo pokušajte ponovo ili nas pozovite
+          direktno na 066 / 8420 455.
         </div>
       )}
 
@@ -142,7 +140,7 @@ export default function ContactForm() {
         disabled={status === "sending"}
         className="inline-flex items-center gap-3 bg-green text-ivory px-10 py-4 text-[11px] uppercase tracking-display hover:bg-green-deep transition-colors disabled:opacity-60 disabled:cursor-wait"
       >
-        {status === "sending" ? "Слање…" : "Пошаљи упит"}
+        {status === "sending" ? "Slanje…" : "Pošalji upit"}
         {status !== "sending" && (
           <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
             <path d="M0 5h12m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.2" />
@@ -150,10 +148,10 @@ export default function ContactForm() {
         )}
       </button>
       <p className="text-xs text-ink-soft/70 leading-relaxed">
-        Слањем упита пристајете на обраду података у сврху одговора.
-        Погледајте нашу{" "}
+        Slanjem upita pristajete na obradu podataka u svrhu odgovora.
+        Pogledajte našu{" "}
         <a href="/politika-privatnosti" className="underline">
-          политику приватности
+          politiku privatnosti
         </a>
         .
       </p>

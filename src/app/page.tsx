@@ -6,31 +6,31 @@ import SectionDivider from "@/components/SectionDivider";
 const oblasti = [
   {
     rim: "I",
-    naziv: "Прекршајно право",
+    naziv: "Prekršajno pravo",
     slug: "prekrsajno-pravo",
     opis:
-      "Заступање окривљених у прекршајним поступцима — саобраћајни, царински и комунални прекршаји, заштитне мере и казнени поени.",
+      "Zastupanje okrivljenih u prekršajnim postupcima — saobraćajni, carinski i komunalni prekršaji, zaštitne mere i kazneni poeni.",
   },
   {
     rim: "II",
-    naziv: "Одштетно право",
+    naziv: "Odštetno pravo",
     slug: "odstetno-pravo",
     opis:
-      "Накнада материјалне и нематеријалне штете — саобраћајне незгоде, повреде на раду, падови, уједи паса и друге врсте штете.",
+      "Naknada materijalne i nematerijalne štete — saobraćajne nezgode, povrede na radu, padovi, ujedi pasa i druge vrste štete.",
   },
   {
     rim: "III",
-    naziv: "Кривично право",
+    naziv: "Krivično pravo",
     slug: "krivicno-pravo",
     opis:
-      "Одбрана окривљених и заступање оштећених у свим фазама кривичног поступка — од истраге до правноснажне пресуде.",
+      "Odbrana okrivljenih i zastupanje oštećenih u svim fazama krivičnog postupka — od istrage do pravnosnažne presude.",
   },
   {
     rim: "IV",
-    naziv: "Непокретности",
+    naziv: "Nepokretnosti",
     slug: "nepokretnosti",
     opis:
-      "Уговори о купопродаји и закупу, посредовање у промету, упис у катастар, забележбе и решавање имовинско-правних односа.",
+      "Ugovori o kupoprodaji i zakupu, posredovanje u prometu, upis u katastar, zabeležbe i rešavanje imovinsko-pravnih odnosa.",
   },
 ];
 
@@ -42,26 +42,26 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10 pt-20 lg:pt-28 pb-24 lg:pb-32">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 fade-up">
-              <Eyebrow>Адвокатска канцеларија · Ниш</Eyebrow>
+              <Eyebrow>Advokatska kancelarija · Niš</Eyebrow>
               <h1 className="font-serif text-[3rem] lg:text-[5.25rem] leading-[0.95] mt-8 text-green">
-                Све је
+                Sve je
                 <br />
-                <span className="italic">на</span>
+                <span className="italic">na</span>
                 <br />
-                доказима.
+                dokazima.
               </h1>
               <p className="mt-6 font-serif text-lg lg:text-xl italic text-ink-soft/80 max-w-lg">
-                „Терет доказивања је на држави."
+                Od uviđaja do presude — činjenice odlučuju.
               </p>
               <p className="mt-8 max-w-xl text-lg lg:text-xl leading-relaxed text-ink-soft font-light">
-                Адвокатска канцеларија <strong className="font-medium text-green">Костић Јовић и партнери</strong> заступа клијенте у прекршајним, одштетним и кривичним поступцима — на територији целе Србије.
+                Advokatska kancelarija <strong className="font-medium text-green">Kostić Jović i partneri</strong> zastupa klijente u prekršajnim, odštetnim i krivičnim postupcima — na teritoriji cele Srbije.
               </p>
               <div className="mt-12 flex flex-wrap gap-4">
                 <Link
                   href="/kontakt"
                   className="inline-flex items-center gap-3 bg-green text-ivory px-8 py-4 text-[11px] uppercase tracking-display hover:bg-green-deep transition-colors"
                 >
-                  Заказите консултацију
+                  Zakažite konsultaciju
                   <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
                     <path d="M0 5h12m-4-4 4 4-4 4" stroke="currentColor" strokeWidth="1.2" />
                   </svg>
@@ -70,7 +70,7 @@ export default function Home() {
                   href="/oblasti"
                   className="inline-flex items-center gap-3 border border-green text-green px-8 py-4 text-[11px] uppercase tracking-display hover:bg-green hover:text-ivory transition-colors"
                 >
-                  Области права
+                  Oblasti prava
                 </Link>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
                 <div className="absolute inset-0 flex items-center justify-center p-8">
                   <Image
                     src="/logo-color.png"
-                    alt="Костић Јовић и партнери"
+                    alt="Kostić Jović i partneri"
                     width={500}
                     height={600}
                     priority
@@ -105,11 +105,11 @@ export default function Home() {
             />
           </svg>
           <p className="font-serif text-3xl lg:text-4xl leading-snug text-green italic">
-            Када вам прети казна, забрана вожње или казнени поени —<br />
-            нема места импровизацији.
+            Kada vam preti kazna, zabrana vožnje ili kazneni poeni —<br />
+            nema mesta improvizaciji.
           </p>
           <div className="mt-8 text-[11px] uppercase tracking-display text-ink-soft">
-            — Из праксе канцеларије
+            — Iz prakse kancelarije
           </div>
         </div>
       </section>
@@ -117,12 +117,12 @@ export default function Home() {
       {/* PRACTICE AREAS */}
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32">
         <div className="text-center">
-          <SectionDivider label="Области права" />
+          <SectionDivider label="Oblasti prava" />
           <h2 className="font-serif text-4xl lg:text-6xl text-green">
-            Чиме се бавимо
+            Čime se bavimo
           </h2>
           <p className="mt-6 max-w-2xl mx-auto text-ink-soft leading-relaxed">
-            Фокусирамо се на четири области у којима имамо највише искуства — заступамо клијенте пред свим прекршајним судовима, парничним судовима и кривичним органима у Србији.
+            Fokusiramo se na četiri oblasti u kojima imamo najviše iskustva — zastupamo klijente pred svim prekršajnim sudovima, parničnim sudovima i krivičnim organima u Srbiji.
           </p>
         </div>
 
@@ -144,7 +144,7 @@ export default function Home() {
                 {o.opis}
               </p>
               <div className="mt-6 inline-flex items-center gap-2 text-[10px] uppercase tracking-display text-green border-b border-gold/60 pb-1">
-                Сазнајте више
+                Saznajte više
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
                   <path d="M0 4h10m-3-3 3 3-3 3" stroke="currentColor" strokeWidth="1.2" />
                 </svg>
@@ -160,38 +160,38 @@ export default function Home() {
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3 text-[11px] uppercase tracking-eyebrow text-gold-light">
               <span className="h-px w-10 bg-gold-light" />
-              Зашто баш ми
+              Zašto baš mi
             </div>
             <h2 className="font-serif text-4xl lg:text-5xl mt-6 leading-tight">
-              Пракса коју води
+              Praksa koju vodi
               <br />
-              <span className="italic text-gold-light">принцип, не калкулација.</span>
+              <span className="italic text-gold-light">princip, ne kalkulacija.</span>
             </h2>
           </div>
           <div className="lg:col-span-7 space-y-6 text-ivory/85 leading-relaxed">
             <p>
-              Полазимо од једноставног правила: <strong className="text-ivory">терет доказивања је на држави, а не на вама</strong>. Сваки навод из захтева пажљиво проверавамо, тражимо материјалне доказе тамо где их нема и доследно штитимо ваше право на одбрану.
+              Polazimo od jednostavnog pravila: <strong className="text-ivory">teret dokazivanja je na državi, a ne na vama</strong>. Svaki navod iz zahteva pažljivo proveravamo, tražimo materijalne dokaze tamo gde ih nema i dosledno štitimo vaše pravo na odbranu.
             </p>
             <p>
-              Заступамо клијенте пред свим прекршајним судовима и Прекршајним апелационим судом, без обзира на то где се поступак води. Захваљујући развијеној мрежи адвоката сарадника, покривамо целу Србију.
+              Zastupamo klijente pred svim prekršajnim sudovima i Prekršajnim apelacionim sudom, bez obzira na to gde se postupak vodi. Zahvaljujući razvijenoj mreži advokata saradnika, pokrivamo celu Srbiju.
             </p>
             <div className="pt-6 grid grid-cols-3 gap-8 border-t border-ivory/15">
               <div>
-                <div className="font-serif text-4xl text-gold-light">Ниш</div>
+                <div className="font-serif text-4xl text-gold-light">Niš</div>
                 <div className="text-[10px] uppercase tracking-display text-ivory/60 mt-2">
-                  Седиште канцеларије
+                  Sedište kancelarije
                 </div>
               </div>
               <div>
                 <div className="font-serif text-4xl text-gold-light">4</div>
                 <div className="text-[10px] uppercase tracking-display text-ivory/60 mt-2">
-                  Адвоката и сарадника
+                  Advokata i saradnika
                 </div>
               </div>
               <div>
-                <div className="font-serif text-4xl text-gold-light">3</div>
+                <div className="font-serif text-4xl text-gold-light">4</div>
                 <div className="text-[10px] uppercase tracking-display text-ivory/60 mt-2">
-                  Језика у раду
+                  Jezika u radu
                 </div>
               </div>
             </div>
@@ -201,19 +201,19 @@ export default function Home() {
 
       {/* CTA */}
       <section className="mx-auto max-w-5xl px-6 lg:px-10 py-24 lg:py-32 text-center">
-        <SectionDivider label="Позовите нас" />
+        <SectionDivider label="Pozovite nas" />
         <h2 className="font-serif text-4xl lg:text-6xl text-green">
-          Прва консултација је без накнаде
+          Razgovarajmo o vašem slučaju.
         </h2>
         <p className="mt-6 text-ink-soft max-w-xl mx-auto leading-relaxed">
-          Свака сарадња почиње пажљивим разговором. Закажите сусрет у канцеларији у Нишу или путем телефона — одговарамо у року од једног радног дана.
+          Svaka saradnja počinje pažljivim razgovorom. Zakažite susret u kancelariji u Nišu ili putem telefona — odgovaramo u roku od jednog radnog dana.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Link
             href="/kontakt"
             className="inline-flex items-center gap-3 bg-green text-ivory px-10 py-5 text-[11px] uppercase tracking-display hover:bg-green-deep transition-colors"
           >
-            Заказите консултацију
+            Zakažite konsultaciju
           </Link>
           <a
             href="tel:+381668420455"

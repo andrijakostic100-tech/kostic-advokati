@@ -1,14 +1,13 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { useT } from "@/i18n/Provider";
 
 export default function Footer() {
-  const t = useT();
   return (
     <footer className="mt-24 bg-green text-ivory/85">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 grid gap-12 lg:grid-cols-4">
+      <div
+        id="kontakt-podaci"
+        className="mx-auto max-w-7xl px-6 lg:px-10 py-16 grid gap-12 lg:grid-cols-4 scroll-mt-28"
+      >
         <div className="lg:col-span-2">
           <Image
             src="/logo-header-green.png"
@@ -18,24 +17,22 @@ export default function Footer() {
             className="h-24 lg:h-28 w-auto mb-6 -ml-4"
           />
           <p className="font-serif text-2xl leading-snug text-ivory/95 max-w-md italic">
-            {t.footer.motto}
+            „Teret dokazivanja je na državi, a ne na vama.”
           </p>
           <p className="text-xs mt-3 tracking-display uppercase text-gold-light/80">
-            {t.footer.mottoAttr}
+            — Iz prakse kancelarije
           </p>
         </div>
 
         <div>
           <div className="text-[11px] uppercase tracking-display text-gold-light mb-4">
-            {t.footer.contact}
+            Kontakt
           </div>
           <address className="not-italic text-sm leading-relaxed text-ivory/80">
-            {t.contact.addressLines.map((line, i) => (
-              <span key={i}>
-                {line}
-                <br />
-              </span>
-            ))}
+            Obrenovićeva 46<br />
+            TC Kalča, lamela D<br />
+            prvi sprat, lokal 109<br />
+            18000 Niš, Srbija
           </address>
           <div className="mt-4 text-sm space-y-2 text-ivory/80">
             <div>
@@ -53,36 +50,40 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          <div className="mt-4 text-xs leading-relaxed text-ivory/70">
+            Ponedeljak–Petak, 09–17h<br />
+            vikendom po dogovoru.
+          </div>
         </div>
 
         <div>
           <div className="text-[11px] uppercase tracking-display text-gold-light mb-4">
-            {t.footer.office}
+            Kancelarija
           </div>
           <ul className="space-y-2 text-sm text-ivory/80">
             <li>
               <Link href="/o-nama" className="hover:text-gold-light">
-                {t.nav.about}
+                O kancelariji
               </Link>
             </li>
             <li>
               <Link href="/oblasti" className="hover:text-gold-light">
-                {t.nav.areas}
+                Oblasti prava
               </Link>
             </li>
             <li>
               <Link href="/tim" className="hover:text-gold-light">
-                {t.nav.team}
+                Tim
               </Link>
             </li>
             <li>
               <Link href="/blog" className="hover:text-gold-light">
-                {t.nav.blog}
+                Blog
               </Link>
             </li>
             <li>
               <Link href="/kontakt" className="hover:text-gold-light">
-                {t.nav.contact}
+                Kontakt
               </Link>
             </li>
           </ul>
@@ -91,13 +92,13 @@ export default function Footer() {
 
       <div className="border-t border-ivory/10">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] uppercase tracking-display text-ivory/55">
-          <div>© {new Date().getFullYear()} Kostić Jović & partners</div>
+          <div>© {new Date().getFullYear()} Kostić Jović i partneri</div>
           <div className="flex gap-6">
             <Link href="/politika-privatnosti" className="hover:text-gold-light">
-              {t.footer.privacy}
+              Politika privatnosti
             </Link>
             <Link href="/uslovi" className="hover:text-gold-light">
-              {t.footer.terms}
+              Uslovi
             </Link>
           </div>
         </div>

@@ -2,50 +2,50 @@ import PageHero from "@/components/PageHero";
 import SectionDivider from "@/components/SectionDivider";
 
 export const metadata = {
-  title: "Тим",
+  title: "Tim",
   description:
-    "Чланови адвокатске канцеларије Костић Јовић и партнери — оснивачи, адвокати и сарадници.",
+    "Članovi advokatske kancelarije Kostić Jović i partneri — osnivači, advokati i saradnici.",
 };
 
 const partneri = [
   {
-    ime: "Андрија Костић",
-    pozicija: "Оснивач · Партнер · Адвокат",
-    inicijali: "АК",
+    ime: "Andrija Kostić",
+    pozicija: "Osnivač · Partner · Advokat",
+    inicijali: "AK",
     email: "adv.andrijakostic@gmail.com",
     tel: "066 / 8420 455",
     telHref: "+381668420455",
-    jezici: "Српски · Енглески · Италијански",
+    jezici: "Srpski · Engleski · Italijanski",
     bio:
-      "Адвокат и један од оснивача канцеларије. Бави се прекршајним, одштетним и кривичним правом, са посебним фокусом на саобраћајне прекршаје и накнаду штете из саобраћајних незгода. Активно заступа клијенте широм Србије.",
+      "Advokat i jedan od osnivača kancelarije. Bavi se prekršajnim, odštetnim i krivičnim pravom, sa posebnim fokusom na saobraćajne prekršaje i naknadu štete iz saobraćajnih nezgoda. Aktivno zastupa klijente širom Srbije.",
   },
   {
-    ime: "Александар Н. Јовић",
-    pozicija: "Оснивач · Партнер · Адвокат",
-    inicijali: "АЈ",
+    ime: "Aleksandar N. Jović",
+    pozicija: "Osnivač · Partner · Advokat",
+    inicijali: "AJ",
     email: "aleksandarn.jovic@gmail.com",
     tel: "064 / 9359 118",
     telHref: "+381649359118",
-    jezici: "Српски · Енглески · Француски",
+    jezici: "Srpski · Engleski · Francuski",
     bio:
-      "Адвокат и један од оснивача канцеларије. Заступа клијенте у прекршајним, одштетним и кривичним поступцима, као и у правним пословима у вези са непокретностима. Дугогодишње искуство у вођењу одштетних предмета.",
+      "Advokat i jedan od osnivača kancelarije. Zastupa klijente u prekršajnim, odštetnim i krivičnim postupcima, kao i u pravnim poslovima u vezi sa nepokretnostima. Dugogodišnje iskustvo u vođenju odštetnih predmeta.",
   },
 ];
 
 const saradnici = [
   {
-    ime: "Милан Туфегџић",
-    pozicija: "Адвокат · Сарадник",
-    inicijali: "МТ",
+    ime: "Milan Tufegdžić",
+    pozicija: "Advokat · Saradnik",
+    inicijali: "MT",
     opis:
-      "Адвокат сарадник у канцеларији. Учествује у вођењу прекршајних, одштетних и кривичних предмета и подршци клијентима у свакодневном раду.",
+      "Advokat saradnik u kancelariji. Učestvuje u vođenju prekršajnih, odštetnih i krivičnih predmeta i podršci klijentima u svakodnevnom radu.",
   },
   {
-    ime: "Андрија Адамовић",
-    pozicija: "Адвокатски приправник",
-    inicijali: "АА",
+    ime: "Andrija Adamović",
+    pozicija: "Advokatski pripravnik",
+    inicijali: "AA",
     opis:
-      "Адвокатски приправник у канцеларији. Подржава тим у припреми поднесака, анализи доказне грађе и заступању пред судовима.",
+      "Advokatski pripravnik u kancelariji. Podržava tim u pripremi podnesaka, analizi dokazne građe i zastupanju pred sudovima.",
   },
 ];
 
@@ -53,13 +53,13 @@ export default function Tim() {
   return (
     <>
       <PageHero
-        eyebrow="Тим"
-        title="Људи иза сваке одлуке."
-        intro="Канцеларију чине два оснивача-партнера, адвокат сарадник и адвокатски приправник. У сваком предмету клијент има свог адвоката — и зна коме се обраћа."
+        eyebrow="Tim"
+        title="Ljudi iza svake odluke."
+        intro="Kancelariju čine dva osnivača-partnera, advokat saradnik i advokatski pripravnik. U svakom predmetu klijent ima svog advokata — i zna kome se obraća."
       />
 
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32">
-        <SectionDivider label="Оснивачи · Партнери" />
+        <SectionDivider label="Osnivači · Partneri" />
 
         <div className="grid lg:grid-cols-2 gap-px bg-rule/40 border border-rule/40 mt-10">
           {partneri.map((p) => (
@@ -90,7 +90,7 @@ export default function Tim() {
               <dl className="mt-8 space-y-3 text-sm">
                 <div className="grid grid-cols-[8rem_1fr] gap-3">
                   <dt className="text-[10px] uppercase tracking-display text-ink-soft/70 pt-1">
-                    Контакт
+                    Kontakt
                   </dt>
                   <dd className="text-ink-soft">
                     <a
@@ -109,7 +109,7 @@ export default function Tim() {
                 </div>
                 <div className="grid grid-cols-[8rem_1fr] gap-3 pt-2 border-t border-rule/40">
                   <dt className="text-[10px] uppercase tracking-display text-ink-soft/70 pt-1">
-                    Језици
+                    Jezici
                   </dt>
                   <dd className="text-ink-soft text-sm">{p.jezici}</dd>
                 </div>
@@ -118,7 +118,7 @@ export default function Tim() {
           ))}
         </div>
 
-        <SectionDivider label="Адвокат сарадник · Приправник" />
+        <SectionDivider label="Advokat saradnik · Pripravnik" />
 
         <div className="grid md:grid-cols-2 gap-px bg-rule/40 border border-rule/40 mt-10">
           {saradnici.map((s) => (

@@ -97,4 +97,4 @@ U odštetnim predmetima naša kancelarija najčešće radi po principu **uspeha*
 
 Najbolje vreme da se obratite advokatu je **odmah nakon nezgode** — pre nego što date izjavu osiguranju i pre nego što potpišete bilo kakav dokument. U tim trenucima nekoliko reči i nekoliko potpisa mogu odlučiti hoćete li dobiti puno ili polovinu onoga što vam pripada.
 
-Pozovite nas — prvi razgovor je bez naknade. Reći ćemo vam realno koliko procenjujemo da iznosi vaša šteta i šta je sledeći korak.
+Pozovite nas. Reći ćemo vam realno koliko procenjujemo da iznosi vaša šteta i šta je sledeći korak.

@@ -79,4 +79,4 @@ U praksi naše kancelarije, gotovo svaki predmet ima prostor za:
 
 Ako vas je policija zaustavila i sumnja na vožnju pod dejstvom alkohola, ili ste već dobili zahtev za pokretanje prekršajnog postupka — nemojte čekati. Svaki dan rokovi teku, a procesna prava se najbolje koriste odmah.
 
-Pozovite nas. Prvi razgovor je bez naknade, i odmah ćemo vam reći kakvi su vam izgledi i šta je potrebno uraditi.
+Pozovite nas — odmah ćemo vam reći kakvi su vam izgledi i šta je potrebno uraditi.

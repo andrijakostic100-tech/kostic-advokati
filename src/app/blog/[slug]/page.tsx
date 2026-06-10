@@ -115,11 +115,11 @@ export default async function BlogPost(
           <div className="bg-parchment border border-rule/50 p-8 lg:p-10">
             <Eyebrow>Imate pitanje?</Eyebrow>
             <h3 className="font-serif text-2xl lg:text-3xl mt-4 text-green leading-tight">
-              Zakažite besplatnu konsultaciju.
+              Razgovarajmo o vašem slučaju.
             </h3>
             <p className="mt-4 text-ink-soft leading-relaxed">
               Ako vam je potrebna pravna pomoć u oblasti o kojoj ste čitali —
-              pozovite nas ili pošaljite poruku. Prvi razgovor je bez naknade.
+              pozovite nas ili pošaljite poruku.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link

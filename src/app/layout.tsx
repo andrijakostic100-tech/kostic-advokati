@@ -3,24 +3,22 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { LanguageProvider } from "@/i18n/Provider";
 
 const serif = Cormorant_Garamond({
   variable: "--font-serif",
-  subsets: ["latin", "latin-ext", "cyrillic"],
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 const sans = Inter({
   variable: "--font-sans",
-  subsets: ["latin", "latin-ext", "cyrillic"],
+  subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kostic-jovic.rs"),
   title: {
     default: "Advokatska kancelarija Kostić Jović i partneri — Niš",
     template: "%s · Kostić Jović i partneri",
@@ -47,15 +45,13 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="sr"
+      lang="sr-Latn"
       className={`${serif.variable} ${sans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ivory text-ink">
-        <LanguageProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </LanguageProvider>
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

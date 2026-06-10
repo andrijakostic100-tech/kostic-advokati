@@ -98,4 +98,4 @@ Mnogi vozači razmišljaju: „Bolje da platim kaznu i završim s tim." To je ra
 3. **Zapišite okolnosti** — vreme, mesto, vremenske uslove, ko je sve bio u vozilu;
 4. **Pozovite nas** — analiziraćemo predmet i reći vam kakvi su vam realni izgledi za uspeh.
 
-Prvi razgovor je besplatan. Često je u prvih nekoliko minuta jasno da li u predmetu postoji prostor za odbranu — i samo to znanje vam pomaže da donesete pametniju odluku.
+Često je u prvih nekoliko minuta razgovora jasno da li u predmetu postoji prostor za odbranu — i samo to znanje vam pomaže da donesete pametniju odluku.
