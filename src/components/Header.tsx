@@ -23,12 +23,12 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-24 flex items-center justify-between gap-6">
         <Link href="/" className="flex items-center group" aria-label="Kostić Jović & partners">
           <Image
-            src="/logo-bw.png"
+            src="/logo-header-green.png"
             alt="Kostić Jović & partners"
-            width={260}
-            height={130}
+            width={1600}
+            height={595}
             priority
-            className="h-14 lg:h-16 w-auto"
+            className="h-16 lg:h-20 w-auto"
           />
         </Link>
 

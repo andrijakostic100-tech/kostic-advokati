@@ -11,11 +11,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 grid gap-12 lg:grid-cols-4">
         <div className="lg:col-span-2">
           <Image
-            src="/logo-white.png"
+            src="/logo-header-green.png"
             alt="Kostić Jović & partners"
-            width={320}
-            height={160}
-            className="h-20 w-auto mb-6"
+            width={1600}
+            height={595}
+            className="h-24 lg:h-28 w-auto mb-6 -ml-4"
           />
           <p className="font-serif text-2xl leading-snug text-ivory/95 max-w-md italic">
             {t.footer.motto}
