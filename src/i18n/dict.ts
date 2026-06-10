@@ -178,9 +178,9 @@ const sr: Dict = {
   },
   home: {
     eyebrow: "Advokatska kancelarija · Niš",
-    heroTitleLine1: "Kada je",
-    heroTitleLine2: "teret",
-    heroTitleLine3: "na državi.",
+    heroTitleLine1: "Sve je",
+    heroTitleLine2: "na",
+    heroTitleLine3: "dokazima.",
     heroIntro:
       "Advokatska kancelarija Kostić Jović i partneri zastupa klijente u prekršajnim, odštetnim i krivičnim postupcima — na teritoriji cele Srbije.",
     bookCta: "Zakažite konsultaciju",
@@ -568,9 +568,9 @@ const en: Dict = {
   },
   home: {
     eyebrow: "Law Firm · Niš, Serbia",
-    heroTitleLine1: "When the",
-    heroTitleLine2: "burden",
-    heroTitleLine3: "lies with the State.",
+    heroTitleLine1: "Everything",
+    heroTitleLine2: "rests on",
+    heroTitleLine3: "the evidence.",
     heroIntro:
       "Kostić Jović & Partners represents clients in misdemeanor, personal injury and criminal proceedings — throughout Serbia.",
     bookCta: "Book a consultation",
@@ -939,9 +939,9 @@ const de: Dict = {
   },
   home: {
     eyebrow: "Rechtsanwaltskanzlei · Niš, Serbien",
-    heroTitleLine1: "Wenn die",
-    heroTitleLine2: "Beweislast",
-    heroTitleLine3: "beim Staat liegt.",
+    heroTitleLine1: "Alles ruht",
+    heroTitleLine2: "auf den",
+    heroTitleLine3: "Beweisen.",
     heroIntro:
       "Kostić Jović & Partners vertritt Mandanten in Ordnungswidrigkeiten-, Schadensersatz- und Strafverfahren — in ganz Serbien.",
     bookCta: "Beratung vereinbaren",
@@ -1294,9 +1294,9 @@ const it: Dict = {
   },
   home: {
     eyebrow: "Studio legale · Niš, Serbia",
-    heroTitleLine1: "Quando l'",
-    heroTitleLine2: "onere",
-    heroTitleLine3: "è dello Stato.",
+    heroTitleLine1: "Tutto",
+    heroTitleLine2: "dipende",
+    heroTitleLine3: "dalle prove.",
     heroIntro:
       "Kostić Jović & Partners assiste i clienti in procedimenti per illeciti amministrativi, risarcimento danni e procedimenti penali — in tutta la Serbia.",
     bookCta: "Prenota una consulenza",
@@ -1637,9 +1637,9 @@ const fr: Dict = {
   },
   home: {
     eyebrow: "Cabinet d'avocats · Niš, Serbie",
-    heroTitleLine1: "Quand la",
-    heroTitleLine2: "charge",
-    heroTitleLine3: "incombe à l'État.",
+    heroTitleLine1: "Tout repose",
+    heroTitleLine2: "sur les",
+    heroTitleLine3: "preuves.",
     heroIntro:
       "Kostić Jović & Partners assiste ses clients dans les procédures de contraventions, d'indemnisation et pénales — partout en Serbie.",
     bookCta: "Prendre rendez-vous",
@@ -1980,9 +1980,9 @@ const zh: Dict = {
   },
   home: {
     eyebrow: "律师事务所 · 塞尔维亚 尼什",
-    heroTitleLine1: "当",
-    heroTitleLine2: "举证责任",
-    heroTitleLine3: "在国家时。",
+    heroTitleLine1: "一切",
+    heroTitleLine2: "取决于",
+    heroTitleLine3: "证据。",
     heroIntro:
       "科斯蒂奇 约维奇 律师事务所在塞尔维亚全境为客户提供违法行为、损害赔偿和刑事案件的代理服务。",
     bookCta: "预约咨询",

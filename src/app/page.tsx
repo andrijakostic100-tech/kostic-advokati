@@ -44,13 +44,16 @@ export default function Home() {
             <div className="lg:col-span-7 fade-up">
               <Eyebrow>Адвокатска канцеларија · Ниш</Eyebrow>
               <h1 className="font-serif text-[3rem] lg:text-[5.25rem] leading-[0.95] mt-8 text-green">
-                Када је
+                Све је
                 <br />
-                <span className="italic">терет</span>
+                <span className="italic">на</span>
                 <br />
-                на држави.
+                доказима.
               </h1>
-              <p className="mt-10 max-w-xl text-lg lg:text-xl leading-relaxed text-ink-soft font-light">
+              <p className="mt-6 font-serif text-lg lg:text-xl italic text-ink-soft/80 max-w-lg">
+                „Терет доказивања је на држави."
+              </p>
+              <p className="mt-8 max-w-xl text-lg lg:text-xl leading-relaxed text-ink-soft font-light">
                 Адвокатска канцеларија <strong className="font-medium text-green">Костић Јовић и партнери</strong> заступа клијенте у прекршајним, одштетним и кривичним поступцима — на територији целе Србије.
               </p>
               <div className="mt-12 flex flex-wrap gap-4">
